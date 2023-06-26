@@ -1,3 +1,4 @@
+import { Footer } from "../../components/footer/Footer"
 import { NavBar } from "../../components/navbar/NavBar"
 import { SessionSecundary } from "../../components/session-secundary/SessionSecundary"
 import { SessionThird } from "../../components/session-third/SessionThird"
@@ -10,6 +11,7 @@ export const Home = () => {
       <Session />
       <SessionSecundary />
       <SessionThird />
+      <Footer />
     </>
 
   )

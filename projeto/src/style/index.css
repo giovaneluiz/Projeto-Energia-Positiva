@@ -8,3 +8,6 @@
   /* word-wrap: break-word;
   overflow-wrap: break-word; */
 }
+html {
+  scroll-behavior: smooth;
+}
