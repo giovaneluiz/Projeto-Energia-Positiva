@@ -12,16 +12,17 @@ export const SessionThird = () => {
 
   };
   const handleInvite = () => {
+    
     if (name && email && desc)
-      return toast("Solicitação enviada com sucesso, aguarde nosso contato", {
-        position: "bottom-right",
-        autoClose: 2000,
+      return toast.success("Solicitação enviada com sucesso, aguarde nosso contato", {
+        position: "top-right",
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
       });
 
   }

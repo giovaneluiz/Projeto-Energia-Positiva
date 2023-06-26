@@ -15,8 +15,8 @@ function App() {
     <BrowserRouter>
       <div>
         <ToastContainer
-          position="bottom-right"
-          autoClose={2000}
+          position="top-right"
+          autoClose={5000}
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick
@@ -24,7 +24,8 @@ function App() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="light"
+          theme="dark"
+
         />
         {/* Same as */}
         <ToastContainer />
