@@ -30,13 +30,18 @@
     opacity: 1;
   }
 }
-.container-session p {
+.container-session h2 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 32px;
   color: white;
-  animation-name: transition;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+}
+
+.container-session p {
+  font-size: 24px;
+  color: white;
+  max-width: 50%;
+  text-align: center;
+  margin-top: 38px;
 }
 
 @keyframes transition {

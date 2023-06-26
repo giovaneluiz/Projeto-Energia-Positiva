@@ -1,5 +1,5 @@
 .container-sessionSencudary {
-  height: 60vh;
+  height: 100vh;
   width: 100%;
   padding: 5px;
   background-color: #0d0d0d;
@@ -20,4 +20,5 @@
 .container-about p {
   font-size: 24px;
   color: #fff;
+  margin-top: 18px;
 }

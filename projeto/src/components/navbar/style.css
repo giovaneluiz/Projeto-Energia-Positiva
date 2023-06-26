@@ -7,13 +7,14 @@
   justify-content: flex-end;
   background-color: #0d0d0d;
   margin: 0 auto;
+  position: fixed;
 }
 .container-navbar ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 300px;
-
+  margin-right: 15px;
 }
 .container-navbar li{
   text-decoration: none;

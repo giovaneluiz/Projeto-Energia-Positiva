@@ -6,50 +6,49 @@ export const SessionThird = () => {
   const [email, setEmail] = useState('')
   const [desc, setDesc] = useState('')
 
-
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-
-  };
   const handleInvite = () => {
-
-    if (name && email && desc)
+    if (name !== '' && email !== '' && desc !== '') {
+     toast.success("Solicitação enviada com sucesso, aguarde o contato de um representante!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      })
       setDesc('')
-    setEmail('')
-    setName('')
-
-    return toast.success("Solicitação enviada com sucesso, aguarde nosso contato", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-
-    });
-
-
-
+      setEmail('')
+      setName('')
+    } else {
+      toast.error("Ops! Algo deu errado, confira se todos os campos estão preenchidos.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      })
+    }
   }
   return (
     <section className="container-sessionThird" id="contact">
-      <h3>Contato </h3>
-      <p>Solicite seu orçamento aqui.</p>
-
+      <h3>Faça contato agora mesmo com nossa equipe</h3>
+      <p>Informações sobre aquisição do beneficio e valores para empresas em um unico canal de atendimento. Mais praticidade e velocidade no atendimento!</p>
       <div className="container-form">
-        <form action="" onSubmit={handleSubmit}>
+        <form action="">
           <label> Nome: </label>
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
           <label> Email: </label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <label> Mensagem: </label>
           <textarea className="textarea" value={desc} onChange={(e) => setDesc(e.target.value)} required />
-          <button type="submit" onClick={handleInvite}>Enviar</button>
+          <button type="button" onClick={handleInvite}>Enviar</button>
         </form>
       </div>
-
     </section>
   )
 }
