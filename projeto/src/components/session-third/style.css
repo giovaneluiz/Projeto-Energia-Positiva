@@ -1,11 +1,10 @@
-
 .container-sessionThird {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +18,7 @@
   font-size: 40px;
   color: #f2d22e;
 }
+
 .container-sessionThird p {
   text-align: center;
   font-size: 20px;
@@ -38,53 +38,76 @@
 }
 
 .container-form form {
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container-form input {
-  width: 400px;
+
+.container-form input,
+.container-form .textarea {
+  width: 100%;
   height: 30px;
   border: none;
   border-radius: 5px;
   padding: 16px;
   outline: none;
 }
+
 .container-form label {
   display: flex;
   font-size: 20px;
   color: #f2d22e;
 }
+
 .container-form .textarea {
-  width: 400px;
-  display: flex;
-  justify-content: flex-start;
   height: 150px;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: vertical;
   margin-bottom: 10px;
 }
+
 .container-form .textarea:focus {
   outline: none;
   border-color: #007bff;
 }
 
 .container-form button {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 200px;
   border: none;
   border-radius: 7px;
   height: 40px;
   font-size: 20px;
-
 }
 
 .container-form button:hover {
   cursor: pointer;
   transition: ease-in-out 0.4s;
   background-color: #f2d22e;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores */
+  .container-sessionThird h3 {
+    font-size: 32px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .container-sessionThird p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .container-form {
+    margin-top: -40px;
+  }
+  .container-form input,
+  .container-form .textarea {
+    max-width: 300px;
+  }
+
+  .container-form button {
+    width: 70%;
+    font-size: 15px;
+  }
 }

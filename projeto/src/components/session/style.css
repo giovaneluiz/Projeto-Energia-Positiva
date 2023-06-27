@@ -5,21 +5,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   background-attachment: fixed;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
 }
+
 .container-session h1 {
   font-weight: bold;
   font-size: 5rem;
   color: #f2d22e;
   animation: moveInRight 1s ease-in-out forwards;
 }
+
 @keyframes moveInRight {
   from {
     transform: translateX(-500px);
@@ -30,6 +30,7 @@
     opacity: 1;
   }
 }
+
 .container-session h2 {
   font-weight: bold;
   font-size: 32px;
@@ -39,21 +40,9 @@
 .container-session p {
   font-size: 24px;
   color: white;
-  max-width: 50%;
+  max-width: 90%;
   text-align: center;
   margin-top: 38px;
-}
-
-@keyframes transition {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .container-session:nth-of-type(1) {
@@ -64,4 +53,20 @@
       #000 100%
     ),
     url(/img/placa.jpg);
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores */
+  .container-session h1 {
+    font-size: 3rem;
+  }
+
+  .container-session h2 {
+    font-size: 24px;
+  }
+
+  .container-session p {
+    font-size: 18px;
+    max-width: 100%;
+  }
 }

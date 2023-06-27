@@ -8,17 +8,36 @@
   justify-content: center;
   align-items: center;
 }
+
 .container-sessionSencudary h1 {
   font-size: 50px;
   color: #f2d22e;
   text-align: center;
 }
+
 .container-about {
-  width: 60%;
+  width: 90%;
   height: 50%;
 }
+
 .container-about p {
   font-size: 24px;
   color: #fff;
   margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores */
+  .container-sessionSencudary h1 {
+    font-size: 32px;
+  }
+
+  .container-about {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-about p {
+    font-size: 18px;
+  }
 }

@@ -6,3 +6,10 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores */
+  footer {
+    font-size: 14px;
+  }
+}
