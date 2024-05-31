@@ -8,7 +8,7 @@ export const SessionThird = () => {
 
   const handleInvite = () => {
     if (name !== '' && email !== '' && desc !== '') {
-     toast.success("Solicitação enviada com sucesso, aguarde o contato de um representante!", {
+      toast.success("Solicitação enviada com sucesso, aguarde o contato de um representante!", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -40,13 +40,21 @@ export const SessionThird = () => {
       <p>Informações sobre aquisição do beneficio e valores para empresas em um unico canal de atendimento. Mais praticidade e velocidade no atendimento!</p>
       <div className="container-form">
         <form action="">
-          <label> Nome: </label>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-          <label> Email: </label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-          <label> Mensagem: </label>
-          <textarea className="textarea" value={desc} onChange={(e) => setDesc(e.target.value)} required />
-          <button type="button" onClick={handleInvite}>Enviar</button>
+          <div className="input-group">
+            <label> Nome: </label>
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+          </div>
+          <div className="input-group">
+            <label> Email: </label>
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          </div>
+          <div className="input-group">
+            <label> Mensagem: </label>
+            <textarea className="textarea" value={desc} onChange={(e) => setDesc(e.target.value)} required />
+          </div>
+          <div className="btn-form">
+            <button type="button" onClick={handleInvite}>Enviar</button>
+          </div>
         </form>
       </div>
     </section>
