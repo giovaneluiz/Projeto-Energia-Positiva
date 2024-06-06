@@ -33,6 +33,10 @@ footer {
   margin-right: 5px;
 }
 
+.group-police label {
+  font-size: 12px;
+}
+
 .group-police a {
   color: #f2d22e;
 }
