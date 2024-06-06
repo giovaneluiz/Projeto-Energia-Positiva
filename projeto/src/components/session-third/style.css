@@ -4,15 +4,15 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding: 18px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.container-sessionThird h3 {
-  margin-top: 50px;
+.container-sessionThird h3 {  
   padding: 20px;
   text-align: center;
   font-size: 40px;
