@@ -18,7 +18,7 @@ export const SessionSecundary = () => {
       <div className="container-mvv">
         <div className="card-sessionSencudary">
           <div className="card-title">
-            <img src="public/img/missao.webp" />
+            <img src="/img/missao.webp" />
             <h2>Missão</h2>
           </div>
           <p>Nossa missão é promover o acesso a energia renovável para as populações de baixa renda, proporcionando soluções acessíveis,
@@ -26,7 +26,7 @@ export const SessionSecundary = () => {
         </div>
         <div className="card-sessionSencudary">
           <div className="card-title">
-            <img src="public/img/visao.webp" />
+            <img src="/img/visao.webp" />
             <h2>Visão</h2>
           </div>
           <p>Ser referência como empresa de energia em Minas Gerais e entregar projetos de alto impacto,
@@ -34,7 +34,7 @@ export const SessionSecundary = () => {
         </div>
         <div className="card-sessionSencudary">
           <div className="card-title">
-            <img src="public/img/valores.webp" />
+            <img src="/img/valores.webp" />
             <h2>Valores</h2>
           </div>
           <p>Comprometimento, melhoria contínua, inovação, integridade, ética, transparência, eficácia, Sustentabilidade e Responsabilidade Social.</p>
