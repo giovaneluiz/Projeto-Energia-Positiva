@@ -93,6 +93,23 @@
   background-color: #967d01;
 }
 
+.group-police-form {
+  display: flex;
+  justify-content: center;  
+}
+
+.group-police-form label {
+  color: #fff;
+  font-size: 12px;
+}
+
+.group-police-form input {
+  margin-right: 5px;
+}
+
+.group-police-form a {
+  color: #f2d22e;
+}
 @media (max-width: 768px) {
   /* Estilos para telas menores */
   .container-sessionThird h3 {

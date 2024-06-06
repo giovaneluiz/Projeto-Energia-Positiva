@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { toast } from "react-toastify";
 import "./style.css"
+
 export const SessionThird = () => {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
@@ -8,7 +9,7 @@ export const SessionThird = () => {
   const [desc, setDesc] = useState('')
 
   const handleInvite = () => {
-    if (name !== '' && phone !== '' && email !== '' && desc !== '' ) {
+    if (name !== '' && phone !== '' && email !== '' && desc !== '') {
       toast.success("Solicitação enviada com sucesso, aguarde o contato de um representante!", {
         position: "top-right",
         autoClose: 5000,
@@ -36,6 +37,7 @@ export const SessionThird = () => {
       })
     }
   }
+
   return (
     <section className="container-sessionThird" id="contact">
       <h3>Faça contato agora mesmo com nossa equipe</h3>
@@ -57,6 +59,10 @@ export const SessionThird = () => {
           <div className="input-group">
             <label> Mensagem: </label>
             <textarea className="textarea" value={desc} onChange={(e) => setDesc(e.target.value)} required />
+          </div>
+          <div className="group-police-form">
+            <input type="checkbox" name="police" id="police" />
+            <label htmlFor="police">Declaro que li e aceito a <a href="/politica-de-privacidade">Politica de Privacidade.</a></label>
           </div>
           <div className="btn-form">
             <button type="button" onClick={handleInvite}>Enviar</button>
