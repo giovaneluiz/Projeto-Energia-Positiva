@@ -7,6 +7,50 @@ footer {
   padding: 20px;
 }
 
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  width: 30%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 16px;
+  outline: none;
+  margin-top: 25px;
+}
+
+.group-police {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.group-police input {
+  margin-right: 5px;
+}
+
+.group-police a {
+  color: #f2d22e;
+}
+
+.btn-newsletter {
+  margin-bottom: 25px;
+  width: 200px;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #f2d22e;
+}
+
+.copy {
+  margin: 25px;
+}
+
 @media (max-width: 768px) {
   /* Estilos para telas menores */
   footer {
