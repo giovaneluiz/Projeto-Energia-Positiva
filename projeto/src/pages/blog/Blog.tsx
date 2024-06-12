@@ -22,7 +22,7 @@ export const Blog = () => {
             <Card tag='Economia' title='Conta de luz muito alta? Saiba aqui como resolver!' description='Leia Mais'></Card>
           </div>
         </article>
-        <a href="#" className='load-newsletter'>Carregar mais noticias</a>
+        <a href="#" className='load-newsletter'>Carregar mais notícias</a>
       </main>
       <Footer />
     </>
